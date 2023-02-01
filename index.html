@@ -10,24 +10,24 @@
   <body>
     <div id="container">
       <div>
+        <img src="/assets/Blue umbrella.png" alt="" class="umbrella" />
+        <img src="/assets/Yello umbrella.png" class="logo" />
         <img
-          src="/assets/Blue umbrella.png"
-          alt=""
-          class="umbrella"
+          src="/assets/loader_icon.svg"
+          class="loader"
+          style="display: none"
         />
-        <img src="/assets/Yello umbrella.png"  class="logo"/>
-        <img  src="/assets/loader_icon.svg"  class="loader" style="display: none;"/>
       </div>
 
       <div>
         <h1>Custom umbrella</h1>
-          
+
         <span class="dot" style="background-color: black"></span>
         <span class="dot" style="background-color: grey"></span>
         <span class="dot" style="background-color: green"></span>
         <span class="dot" style="background-color: purple"></span>
         <span class="dot" style="background-color: rgb(42, 177, 228)"></span>
-        <span class="dot" style="background-color: rgb(254,209,68)"></span>
+        <span class="dot" style="background-color: rgb(254, 209, 68)"></span>
         <span class="dot" style="background-color: orange"></span>
         <span class="dot" style="background-color: rgb(216, 50, 139)"></span>
 
@@ -38,9 +38,19 @@
           <label for="myFile">
             <img src="/assets/upload_icon.svg" alt="" class="uploadIcon" />
           </label>
-          <input  type="file" id="myFile" accept="image/jpeg, image/png, image/jpg" onchange="uploadFile(event)"/>
+          <input
+            type="file"
+            id="myFile"
+            accept="image/jpeg, image/png, image/jpg"
+            onchange="uploadFile(event)"
+          />
           <h3 id="uploadText">UPLOAD LOGO</h3>
-          <img src="/assets/close.svg" alt="" class="close" onclick="removeLogo()">
+          <img
+            src="/assets/close.svg"
+            alt=""
+            class="close"
+            onclick="removeLogo()"
+          />
         </div>
       </div>
     </div>
@@ -48,4 +58,3 @@
 </html>
 
 <script src="index.js"></script>
-
