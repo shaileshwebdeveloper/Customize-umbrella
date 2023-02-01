@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div>
+        <img
+          src="/assets/Blue umbrella.png"
+          alt=""
+          class="umbrella"
+        />
+        <img src="/assets/Yello umbrella.png"  class="logo"/>
+        <img  src="/assets/loader_icon.svg"  class="loader" style="display: none;"/>
+      </div>
+
+      <div>
+        <h1>Custom umbrella</h1>
+          
+        <span class="dot" style="background-color: black"></span>
+        <span class="dot" style="background-color: grey"></span>
+        <span class="dot" style="background-color: green"></span>
+        <span class="dot" style="background-color: purple"></span>
+        <span class="dot" style="background-color: rgb(42, 177, 228)"></span>
+        <span class="dot" style="background-color: rgb(254,209,68)"></span>
+        <span class="dot" style="background-color: orange"></span>
+        <span class="dot" style="background-color: rgb(216, 50, 139)"></span>
+
+        <h3>Customize your umbrella</h3>
+        <p class="para">Upload a logo for an instant preview</p>
+        <p>.png and .jpg files only, Max file size is 5MB</p>
+        <div class="upload">
+          <label for="myFile">
+            <img src="/assets/upload_icon.svg" alt="" class="uploadIcon" />
+          </label>
+          <input  type="file" id="myFile" accept="image/jpeg, image/png, image/jpg" onchange="uploadFile(event)"/>
+          <h3 id="uploadText">UPLOAD LOGO</h3>
+          <img src="/assets/close.svg" alt="" class="close" onclick="removeLogo()">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="index.js"></script>
+
